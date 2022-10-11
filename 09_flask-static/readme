@@ -1,0 +1,18 @@
+Young Lions Crying At War:: Ameer Alnasser, Yat Long Chan, Wilson Mach
+SoftDev pd 8
+K09: Some Things Never Change // static directory
+2022-10-11
+
+PREDICTIONS:
+- opening http://localhost:5000/static/foo will display some text on the webpage
+	- it instead downloaded the foo file to the Downloads directory
+- opening  http://localhost:5000/static/foo.html will display text on the webpage
+	- webpage displayed "Is this plaintext, though"
+
+DISCO:
+- opening a plaintext file on a flask webpage will download the file to the local machine
+- opening html file will display the text on a webpage
+
+QCC
+- Can we display a static and dynamic file on the same webpage?
+- Can we refer to static files in a dynamic file?
