@@ -2,13 +2,26 @@ Young Lions Crying At War:: Ameer Alnasser, Yat Long Chan, Wilson Mach
 SoftDev pd 8
 K10: Just Plug It In // templating
 2022-10-13
+time spent: 0.5 hours
+
+DISCO:
+- Don't load the flask webpage using https
+
+QCC:
+- What is the syntax used for making templates?
 
 PREDICTIONS:
 Q0: The program won't be able to run b/c it will not be importing the render_template function.
 Q1: http://127.0.0.1/my_foist_template:5000
-Q2: first arg: template
-		second arg:
+Q2: first arg: template filename
+	second arg: title of webpage
+	third arg: collection being iterated over
+
 RESULTS:
 Q0: root route: ran as expected b/c the hello_world fxn doesn't call render_template.
 		my_foist_template: NameError: name 'render_template' is not defined
 Q1: http://127.0.0.1:5000/my_foist_template
+Q2: first arg: template filename
+	second arg: title of webpage
+	third arg: collection being iterated over
+
