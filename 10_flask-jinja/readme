@@ -5,10 +5,13 @@ K10: Just Plug It In // templating
 time spent: 0.5 hours
 
 DISCO:
-- Don't load the flask webpage using https
+- load the flask webpage using http and not https
+- How to create multiple routes 
+- How to use templates for flask
 
 QCC:
-- What is the syntax used for making templates?
+- How does the syntax on the template file work?
+- How can we incorporate css?
 
 PREDICTIONS:
 Q0: The program won't be able to run b/c it will not be importing the render_template function.
@@ -24,4 +27,3 @@ Q1: http://127.0.0.1:5000/my_foist_template
 Q2: first arg: template filename
 	second arg: title of webpage
 	third arg: collection being iterated over
-
