@@ -1,3 +1,9 @@
+Young Lions Crying At War:: Ameer Alnasser, Yat Long Chan, Wilson Mach
+SoftDev pd 8
+K11: Form(s) Like Voltron // form submission
+2022-10-14
+time spent: 0.5 hours
+
 Predictions:
 1. dspl_page
   1. prints stuff to terminal
@@ -5,8 +11,15 @@ Predictions:
   3. put template
 
 2. authenticate
-  1.
+  1. the args dictionary will be updated with user inputs
 
-Results:
-1. disp_loginpage
-  1. prints stuff to terminal but
+DISCO:
+- A HTTP 405 error is thrown when GET is excluded from method field in app.route()
+- the args dictionary is updated with user inputs
+- the request method isn't needed to load and use webpage in browser, but stores user inputs.
+- When the methods are included in app.route(), we cannot access the values stored in request.args
+
+
+QCC:
+- What are GET and POST requests?
+- How are do they differ?

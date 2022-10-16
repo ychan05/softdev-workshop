@@ -1,10 +1,12 @@
-# Clyde 'Thluffy' Sinclair
-# SoftDev
-# Oct 2022
+# Young Lions Crying At War:: Ameer Alnasser, Yat Long Chan, Wilson Mach
+# SoftDev pd 8
+# K11: Form(s) Like Voltron // form submission
+# 2022-10-14
+# time spent: 0.5 hours
 
 from flask import Flask             #facilitate flask webserving
 from flask import render_template   #facilitate jinja templating
-# from flask import request           #facilitate form submission
+from flask import request           #facilitate form submission
 
 #the conventional way:
 #from flask import Flask, render_template, request
@@ -28,7 +30,7 @@ PROTIP: Insert your own in-line comments
    understand what is going on.
 '''
 
-@app.route("/") #, methods=['GET', 'POST'])
+@app.route("/", methods=['GET', 'POST'])
 def disp_loginpage():
     print("\n\n\n")
     print("***DIAG: this Flask obj ***")
@@ -40,24 +42,24 @@ def disp_loginpage():
     #print("***DIAG: request.args['username']  ***")
     #print(request.args['username'])
     print("***DIAG: request.headers ***")
-    # print(request.headers) #prediction: set up header
-    return render_template( 'login.html' ) #prediction: run website with template
+    print(request.headers) 
+    return render_template( 'login.html' ) #run website with template
 
 
-@app.route("/auth") # , methods=['GET', 'POST'])
+@app.route("/auth", methods=['GET', 'POST'])
 def authenticate():
     print("\n\n\n")
     print("***DIAG: this Flask obj ***")
     print(app)
     print("***DIAG: request obj ***")
-    # print(request)
+    print(request)
     print("***DIAG: request.args ***")
-    # print(request.args)
+    print(request.args)
     #print("***DIAG: request.args['username']  ***")
     #print(request.args['username'])
     print("***DIAG: request.headers ***")
-    # print(request.headers)
-    return "Waaaa hoool HAAAH"  #response to a form submission
+    print(request.headers)
+    return "Waaaa hooo HAAAH"  #response to a form submission
 
 
 
