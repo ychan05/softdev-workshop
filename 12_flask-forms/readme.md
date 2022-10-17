@@ -1,8 +1,8 @@
-Young Lions Crying At War:: Ameer Alnasser, Yat Long Chan, Wilson Mach
-SoftDev pd 8
-K11: Form(s) Like Voltron // form submission
-2022-10-14
-time spent: 0.5 hours
+  Luigi (he/they):: Yat Long Chan, Brian Wang
+  SoftDev pd 8
+  K12: Form(s) Take and Give
+  2022-10-17
+  time spent: 0.5 hours
 
 Predictions:
 1. dspl_page

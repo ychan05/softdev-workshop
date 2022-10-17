@@ -1,8 +1,8 @@
-# Young Lions Crying At War:: Ameer Alnasser, Yat Long Chan, Wilson Mach
-# SoftDev pd 8
-# K11: Form(s) Like Voltron // form submission
-# 2022-10-14
-# time spent: 0.5 hours
+#Luigi (he/they):: Yat Long Chan, Brian Wang
+#SoftDev pd 8
+#K12: Form(s) Take and Give
+#2022-10-17
+#time spent: 0.5 hours
 
 from flask import Flask             #facilitate flask webserving
 from flask import render_template   #facilitate jinja templating
@@ -50,19 +50,19 @@ def disp_loginpage():
 
 @app.route("/auth", methods=['POST'])
 def authenticate():
-    print("\n\n\n")
-    print("***DIAG: this Flask obj ***")
-    print(app)
-    print("***DIAG: request obj ***")
-    print(request)
-    print("***DIAG: request.form ***")
+    #print("\n\n\n")
+    #print("***DIAG: this Flask obj ***")
+    #print(app)
+    #print("***DIAG: request obj ***")
+    #print(request)
+    #print("***DIAG: request.form ***")
     #print(request.args)
-    print(request.form)
-    print("***DIAG: request.form['username']  ***")
-    print(request.form['username']) #returns username entered
+    #print(request.form)
+    #print("***DIAG: request.form['username']  ***")
+    name=request.form['username'] #returns username entered
     print("***DIAG: request.headers ***")
     print(request.headers)
-    return "Waaaa hooo HAAAH"  #response to a form submission
+    return render_template('response.html')  #response to a form submission
 
 
 
