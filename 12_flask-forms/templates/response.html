@@ -1,3 +1,28 @@
+<!--
+  Luigi (he/they):: Yat Long Chan, Brian Wang
+  SoftDev pd 8
+  K12: Form(s) Take and Give
+  2022-10-17
+  time spent: 0.5 hours
+ -->
+
 <html>
-    
+    <head>
+        <title> RESPONSE PAGE </title>
+    </head>
+
+    <body>
+        USERNAME: <b>{{user}}</b>
+        <br>
+        REQUEST METHOD: <b>{{method}}</b>
+         <h2>
+            Hello there, {{user}}. Welcome to this webpage
+         </h2>
+            <b>Differences between GET and POST:</b> <br>
+            <ul>
+                <li>With GET, they are displayed in the address bar.</li>
+                <li>With POST, inputs are not visible in the address bar. More secure. </li>
+                <li>Cannot access inputs with either request.args or request.form with GET</li>
+            </ul>
+    </body>
 </html>
