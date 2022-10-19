@@ -1,0 +1,49 @@
+/*
+  Luigi (he/they):: Yat Long Chan, Brian Wang
+  SoftDev pd 8
+  K14: Serving Looks / host index.html on flask app 
+  2022-10-19
+  time spent: hours
+*/
+
+*{
+  font-family:  Arial, Helvetica, sans-serif
+}
+
+body{
+  background-color: #555;
+} 
+
+#navbar {
+  padding-left: 10px;
+  width:200px;
+  height: 300px;
+ 
+}
+#lorem_ipsum{
+  width: 600px;
+}
+h1 {
+    color: #FFF;
+    text-align: center;
+    background:#AAA;
+    margin-bottom: 0px;
+  }
+#big_boi {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  background: #777;
+}
+
+#navbar a{
+  color: #DDD;
+  text-decoration: none;
+  display: block;
+}
+
+footer{
+  background:#444;
+  color:#777;
+  text-align:right;
+  padding: 10px;
+}
