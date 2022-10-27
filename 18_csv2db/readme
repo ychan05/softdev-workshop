@@ -1,0 +1,19 @@
+Luigi (he/they):: Yat Long Chan, Brian Wang
+SoftDev pd 8
+K18: (Python+SQLite)3 Colllab: A Mare Widge Made in Hebben :: Using python to populate a SQLite3 database from a csv file
+2022-10-26
+time spent: 0.8 hours
+
+disco:
+ - .mode box for nicer outputs in sqlite3
+ - with open() as to not keep file opened and fuck it up
+ - Drop table to drop the table when it too heavy
+ - c.execute to throw anything in they need
+ - fetch (go fetch doggy)
+
+
+qcc:
+ - What is the worst that could happen if file is not closed after opened
+ - How can we link the two tables?
+ - Log by bulb?
+
