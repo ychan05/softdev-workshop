@@ -10,7 +10,7 @@ app = Flask(__name__)
 #hard-coded login
 user = "frodo"
 passwd = "baggins"
-app.secret_key="HI"
+app.secret_key="HI" #dummy secret key
 
 @app.route('/', methods=['GET'])
 def disp_login():
@@ -24,12 +24,12 @@ def disp_login():
 @app.route("/auth", methods=['GET', 'POST'])
 def authenticate():
     if request.method == 'GET':
-        return render_template('auth.html')
+        return redirect('/response')
 
     if request.method == 'POST':
         if request.form['username'] == user and request.form['password'] == passwd:
             session['username']=request.form['username']
-            return render_template('auth.html')
+            return redirect('/response')
         elif request.form['username'] != user and request.form['password'] != passwd:
             return render_template('login.html', status="Incorrect Username and Password")
         elif request.form['username'] != user:
@@ -37,12 +37,16 @@ def authenticate():
         elif request.form['password'] != passwd:
             return render_template('login.html', status="Incorrect Password")
 
-@app.route("/logout", methods=['POST'])
+@app.route('/response')
+def response():
+    return render_template('response.html')
+    
+@app.route('/logout')
 def logout():
     #wipe login info cookies
     session.pop('username', None)
     return redirect('/')
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.debug = True
     app.run()
