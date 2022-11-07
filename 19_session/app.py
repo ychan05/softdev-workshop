@@ -17,7 +17,7 @@ def disp_login():
         return redirect('/auth')
     return render_template('login.html')
     
-@app.route("/auth", methods=['POST'])
+@app.route("/auth", methods=['GET', 'POST'])
 def authenticate():
     if request.method == 'GET':
         return render_template('response.html')
