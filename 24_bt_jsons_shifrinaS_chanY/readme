@@ -2,14 +2,15 @@
     SoftDev 
     K24 -- Mmmmm... Tasty! (testing bootstrap)
     2022-11-30
-    Time Taken: 0.7 hrs
+    Time Taken: 1 hrs
 
 DISCO:
 - can add classes to any tag 
 
 QCC:
-- 
+- how do we vertically align text in a column without changing the column's size
+    - setting size for column in <head> doesn't work
 
 q0: 1
-q0b: Bootstrap documentation
-q1: 
+q0b: Bootstrap documentation, neighbouring team's readme
+q1: Foundation
