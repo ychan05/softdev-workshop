@@ -3,6 +3,7 @@
 ;SoftDev pd0
 ;K27 -- Basic functions in JavaScript
 ;2023-04-04t
+;time spent: 0.5 hours
 
 ;Scheme Antecedents for JS work
 
