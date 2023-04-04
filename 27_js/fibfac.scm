@@ -25,12 +25,10 @@
 ;fib:
 (define
   fib (lambda (n)
-  (if (= n 0)
-      0
-      (if (= n 1)
-          1
-          (+ (fib(- n 1)) (fib(- n 2)))
-  ))))
+  (if (or (= n 1) (= n 0))
+      n
+      (+ (fib(- n 1)) (fib(- n 2)))
+  )))
 
 (fib 0) ;"...should be  0"
 (fib 1) ;"...should be  1"
