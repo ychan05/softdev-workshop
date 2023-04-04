@@ -1,21 +1,18 @@
-Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon
-SoftDev pd0
+Team Infinite Synergy :: Yat Long Chan, David Deng
+SoftDev pd8
 K27 -- Basic functions in JavaScript
-2023-04-03t
+2023-04-04t
+time spent: 0.5 hrs
 
 DISCO
 -----------------------------------------------------------------
-* Ooooh, ___
-* Aaah-haa!  ____
-* ...
+* JS is an untyped language
+* JS is not a compiled language
 =================================================================
 
 QCC
 -----------------------------------------------------------------
-* Why...?
-* Huh?
-* Teh whah now?
-* ...
+* Can functions be stored in variables?
 =================================================================
 
 
