@@ -1,7 +1,8 @@
-// Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon 
-// SoftDev pd0
+// Team Infinite Synergy :: Yat Long Chan, David Deng 
+// SoftDev pd8
 // K27 -- Basic functions in JavaScript
 // 2023-04-04t
+// Time spent: 0.5 hours
 // --------------------------------------------------
 
 
@@ -26,7 +27,7 @@ console.log(fact(5))
 
 
 function fib(n) {
-    if (n == 0 || n == 1) {
+    if (n === 0 || n === 1) {
         return n;
     }
     return fib(n - 1) + fib(n - 2);
