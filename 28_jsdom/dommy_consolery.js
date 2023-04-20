@@ -18,10 +18,10 @@
    (delete this block comment once you are done)
 */
 
-// Team Infinite Synergy:: Yat Long Chan, David Deng 
+// Team Infinite Synergy:: Yat Long Chan, David Deng
 // SoftDev pd8
 // K28 -- Getting more comfortable with the dev console and the DOM
-// 2023-04-05w
+// 2023-04-20r
 // --------------------------------------------------
 
 
@@ -54,7 +54,7 @@ var o = { 'name' : 'Thluffy',
 var addItem = function(text) {
   var list = document.getElementById("thelist");
   var newitem = document.createElement("li");
-  newitem.innerHTML = text;
+  newitem.innerHTML = text; //set text of element
   list.appendChild(newitem);
 };
 
@@ -86,27 +86,48 @@ var stripe = function() {
 
 //insert your implementations here for...
 // FIB
-function fib(n) {
-  if (n === 0 || n === 1) {
-      return n;
+var fibonacci = document.getElementById('fib');
+
+var fib = function(i) {
+  if (i < 2) {return i;}
+  else {
+    return fib(i - 1) + fib(i - 2);
   }
-  return fib(n - 1) + fib(n - 2);
-}
-// FAC
-function fact(n) {
-  if (n < 2) {
-      return 1;
-  }
-  return n * fact(n - 1);
 }
 
+fibonacci.addEventListener('click', () => {
+  document.getElementById('fib-txt').innerHTML = "fib(5) = " + fib(5);
+}); 
+
+// FAC
+var factorial = document.getElementById('fac');
+
+var fac = function(i) {
+  if (i === 1) {
+    return 1;
+  }
+  while (i > 1) {
+    return i * fac(i - 1);
+  }
+}
+
+factorial.addEventListener('click', () => {
+  document.getElementById('fac-txt').innerHTML = "fac(5) = " + fac(5);
+});
+
 // GCD
-function GCD(a, b) {
+var GCD = document.getElementById('gcd');
+
+var gcd = function(a, b) {
   if (b === 0) {
     return a;
   }
-  return GCD(b, a % b);
+  return gcd(b, a % b);
 }
+
+GCD.addEventListener('click', () => {
+  document.getElementById('gcd-txt').innerHTML = "gcd(25, 10) = " + gcd(25, 10);
+});
 
 // In addition to the style shown above,
 //  you are encouraged to test drive the "arrow function syntax" as shown below.
@@ -115,5 +136,4 @@ const myFxn = (param1, param2) => {
   // body
   return retVal;
 };
-
 
