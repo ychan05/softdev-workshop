@@ -1,0 +1,11 @@
+Team Infinite Synergy:: Yat Long Chan, David Deng
+SoftDev pd8
+K29 -- Manipulating the DOM part 2
+2023-04-24m
+
+DISCO:
+- Use innerHTML to manipulate HTML in an element.
+- objects similar to C structs.
+
+QCC:
+- arrow function vs regular function? 
