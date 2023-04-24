@@ -7,6 +7,10 @@ var ctx = c.getContext("2d");
 //init globar state var
 var mode = "rect";
 
+// set shape color
+ctx.fillStyle = "red";
+ctx.strokeStyle = "red";
+
 //var toggleMode = function(e){
 var toggleMode = (e) => {
     console.log("toggling...");
@@ -50,7 +54,9 @@ var clear = () => {
 };
 
 c.addEventListener("click", draw); //passes the mouse event as parameter for the function
+
 var bToggler = document.getElementById("buttonToggle");
 bToggler.addEventListener("click", toggleMode);
+
 var bClear = document.getElementById("buttonClear");
 bClear.addEventListener("click", clear);
