@@ -1,3 +1,11 @@
+/*
+Infinite Synergy: Yat Long Chan, David Deng
+SoftDev pd8
+K30 -- basic canvas work in JS
+2023-04-25t
+time spent: 
+*/
+
 //retrieve node in DOM via ID
 var c = document.getElementById("slate");
 
@@ -21,8 +29,6 @@ var toggleMode = (e) => {
         mode = "rect";
     }
 };
-
-
 
 var drawRect = (e) => {
     var mouseX = e.offsetX; //gets X-coor of mouse when event is fired
