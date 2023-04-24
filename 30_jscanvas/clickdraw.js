@@ -11,32 +11,32 @@ var mode = "rect";
 var toggleMode = (e) => {
     console.log("toggling...");
     if (mode === "rect") {
-        mode = "circ"
+        mode = "circ";
     }
     else {
-        mode = "rect"
+        mode = "rect";
     }
-}
+};
 
 
 
-var drawRect = function(e) {
+var drawRect = (e) => {
     var mouseX = e.offsetX; //gets X-coor of mouse when event is fired
     var mouseY = e.offsetY; //gets Y-coor of mouse when event is fired
     console.log("mouseclick registered at client", e.clientX, e.clientY);
-    ctx.fillRect(mouseX, mouseY, 50, 100);
+    ctx.fillRect(mouseX, mouseY, 80, 100);
 };
 
-var drawCircle = function(e) {
+var drawCircle = (e) => {
     var mouseX = e.offsetX;
     var mouseY = e.offsetY;
     ctx.beginPath();
-    ctx.arc(mouseX, mouseY, 60, 0, Math.PI * 2, true);
+    ctx.arc(mouseX, mouseY, 50, 0, Math.PI * 2, true);
     ctx.stroke();
     ctx.fill();
 };
 
-var draw = function(e) {
+var draw = (e) => {
     if (mode === "rect") {
         drawRect(e);
     } else {
@@ -44,6 +44,13 @@ var draw = function(e) {
     }
 };
 
-c.addEventListener("click", draw) //passes the mouse event as parameter for the function
+
+var clear = () => {
+    ctx.clearRect(0, 0, c.width, c.height);
+};
+
+c.addEventListener("click", draw); //passes the mouse event as parameter for the function
 var bToggler = document.getElementById("buttonToggle");
 bToggler.addEventListener("click", toggleMode);
+var bClear = document.getElementById("buttonClear");
+bClear.addEventListener("click", clear);
