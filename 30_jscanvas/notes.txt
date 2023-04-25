@@ -1,0 +1,10 @@
+Infinite Synergy: Yat Long Chan, David Deng
+SoftDev pd8
+K30 -- canvas based JS drawing
+2023-04-25t
+
+DISCO:
+- offset is already adjusted.
+
+QCC:
+- How is offset calculated?
