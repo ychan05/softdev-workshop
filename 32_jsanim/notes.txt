@@ -1,0 +1,10 @@
+Guoblins: Yat Long Chan, Jacob Guo
+SoftDev pd8
+K31 -- animation in canvas JS
+2023-04-26w
+
+DISCO:
+a callback fxn is a fxn passed into another fxn as an argument
+
+QCC:
+none
