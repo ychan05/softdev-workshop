@@ -1,3 +1,10 @@
+/*
+Guoblins: Yat Long Chan, Jacob Guo
+SoftDev pd8
+K31 -- animation in canvas JS
+2023-04-26w
+*/
+
 var c = document.getElementById("playground");
 var dotButton = document.getElementById("buttonCircle");
 var  stopButton = document.getElementById("buttonStop");
