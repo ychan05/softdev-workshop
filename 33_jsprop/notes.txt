@@ -1,0 +1,36 @@
+Q: When user clicks on a cell, in what order will the pop-ups appear?
+
+The cell first, row 2nd, then table last
+
+Q: What will happen when next line is uncommented?
+  //e.stopPropagation();
+Only one pop up will show up.
+
+Q: When user clicks on a cell, in what order will the pop-ups appear?
+    //table.addEventListener('click', clicky, true);
+The event listener with arg true will appear first.
+
+
+//Q: Does the order in which the event listeners are attached matter?
+
+//Predict, then test...
+//Q: What effect does the boolean arg have in each?
+//   (Leave exactly 1 version uncommented to test...)
+
+for (var x=0; x < tds.length; x++) {
+  tds[x].addEventListener('click', clicky, true);
+  // tds[x].addEventListener('click', clicky, false);
+}
+
+for (x=0; x < trs.length; x++) {
+  trs[x].addEventListener('click', clicky, true);
+  //trs[x].addEventListener('click', clicky, false);
+}
+
+table.addEventListener('click', clicky, true);
+//table.addEventListener('click', clicky, false);
+
+ORDER TYPED IN DOES NOT MATTER (WHERE THE FUNCTIONS ARE TYPED)
+CAPTURING: When true, POPUPS are based on HEIRARCHY (big guys #1) ARE PRIORITIZED (BIGGER ID'S WILL BE FIRST) (table, tr, td)
+BUBBLING : When false, POPUPS are based on REVERSE HEIRARCHY (small guys #1). (td, tr, table) (DEFAULT) 
+Falses will always be after trues.
