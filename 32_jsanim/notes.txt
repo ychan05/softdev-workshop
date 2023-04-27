@@ -1,10 +1,10 @@
-Guoblins: Yat Long Chan, Jacob Guo
+Infinite Synergy: Yat Long Chan, David Deng
 SoftDev pd8
-K31 -- animation in canvas JS
-2023-04-26w
+K32 -- screensaver in canvas JS
+2023-04-27r
 
 DISCO:
-a callback fxn is a fxn passed into another fxn as an argument
+imagemagick very cool. Shows dimensions of jpg.
 
 QCC:
-none
+why preventDefault()?

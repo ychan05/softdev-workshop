@@ -1,8 +1,8 @@
 /*
-Guoblins: Yat Long Chan, Jacob Guo
+Infinite Synergy: Yat Long Chan, David Deng
 SoftDev pd8
-K31 -- animation in canvas JS
-2023-04-26w
+K32 -- screensaver in canvas JS
+2023-04-27r
 */
 
 var c = document.getElementById("playground");
@@ -25,6 +25,7 @@ var radius = 100;
 var growing = true;
 
 var drawDot = () =>{
+    // clear();
     ctx.clearRect(0, 0, c.width, c.height);
     if(radius === c.height / 2) {growing = false}
     if(radius === 0) {growing = true}
@@ -44,10 +45,8 @@ var drawDot = () =>{
 };
 
 var stopIt = () => {
-    console.log("stopit invoked...");
+    console.log(requestID);
     window.cancelAnimationFrame(requestID);
-    console.log("requestID cancelled");
-
 };
 
 var dvdLogoSetup = function() {
@@ -56,8 +55,8 @@ var dvdLogoSetup = function() {
     var rectWidth = 90;
     var rectHeight = 60;
 
-    var rectX = (Math.random() * (c.width - rectWidth) );
-    var rectY = (Math.random() * (c.height- rectHeight));
+    var rectX = (Math.random() * (c.width - rectWidth));
+    var rectY = (Math.random() * (c.height - rectHeight));
 
     var xVel = 2;
     var yVel = 2;
