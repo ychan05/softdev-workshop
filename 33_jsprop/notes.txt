@@ -1,3 +1,8 @@
+Guoblins: Yat Long Chan, Jacob Guo
+SoftDev pd8
+K33 -- event propogation
+2023-04-28f
+
 Q: When user clicks on a cell, in what order will the pop-ups appear?
 
 The cell first, row 2nd, then table last
